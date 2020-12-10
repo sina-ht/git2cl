@@ -44,6 +44,18 @@ Support
 
 Try talking to mailto:simon@josefsson.org[Simon Josefsson].
 
+
+Additionals
+-----------
+Text below is written by mailto:sian.ht@gmail.com[Hiroshi Takekawa].
+
+Some changes have been made to the link:http://repo.or.cz/w/git2cl.git[original] version.  Please inspect the git log for the differences.
+
+### Changes
+- Some space fixes.
+- Remove Signed-off-by's.
+
+
 License
 -------
 - SPDX-License-Identifier: GPL-2.0-or-later

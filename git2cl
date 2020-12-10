@@ -1,6 +1,7 @@
 #!/usr/bin/perl
 # SPDX-License-Identifier: GPL-2.0-or-later
 
+# Copyright (C) 2020 Hiroshi Takekawa <sian.ht@gmail.com>
 # Copyright (C) 2007, 2008 Simon Josefsson <simon@josefsson.org>
 # Copyright (C) 2007 Luis Mondesi <lemsx1@gmail.com>
 # * calls git directly. To use it just: 
@@ -294,6 +295,7 @@ while (my $_l = <$fh>) {
     if ($state == 0) {
 	if ($_l =~ m,^Author: (.*),) {
 	    $author = $1;
+	    $author =~ s/ </  </og;
 	}
 	if ($_l =~ m,^Date: (.*),) {
 	    @date = strptime($1);
@@ -312,6 +314,10 @@ while (my $_l = <$fh>) {
             $state=0;
             next;
         }
+	if ($_s =~ m/^Signed-off-by: /)
+	{
+	    next;
+	}
 	$comment = $comment . $_s;
 	$state = 2 if ($_l =~ m,^$,);
     } elsif ($state == 2) {
@@ -335,9 +341,12 @@ while (my $_l = <$fh>) {
 	$files_last_line_len = last_line_len($files) + 1;
 	my $msg = wrap_log_entry($comment, "\t", 69-$files_last_line_len, 69);
 
-	$msg =~ s/[ \t]+\n/\n/g;
-
-	print "$files: $msg\n";
+	$msg =~ s/[ \t]+\r?\n/\n/g;
+	if (substr($msg, 0, 1) eq "\n") {
+		print "$files:$msg\n";
+	} else {
+		print "$files: $msg\n";
+	}
 
 	@date = ();
 	$author = "";
