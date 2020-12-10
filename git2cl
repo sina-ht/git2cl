@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 # SPDX-License-Identifier: GPL-2.0-or-later
+# git2cl version 3.0
 
 # Copyright (C) 2020 Hiroshi Takekawa <sian.ht@gmail.com>
 # Copyright (C) 2007, 2008 Simon Josefsson <simon@josefsson.org>

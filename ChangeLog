@@ -1,0 +1,97 @@
+2020-12-10  Hiroshi Takekawa  <sian.ht@gmail.com>
+
+	* README.md, git2cl: Some space fixed and remove Signed-off-by's
+
+2020-12-10  Hiroshi Takekawa  <sian.ht@gmail.com>
+
+	* README.md, git2cl: Clean up license Note that this change is not intended to change the rights permitted
+	by original authors.  Use SPDX License Identifier and clean up
+	descriptions.
+
+2020-12-10  Hiroshi Takekawa  <sian.ht@gmail.com>
+
+	* README.html, README => README.md: Remove README.html and rename
+	README to README.md
+
+2008-08-27  Simon Josefsson  <simon@josefsson.org>
+
+	* README.html: Generated.
+
+2008-08-27  Simon Josefsson  <simon@josefsson.org>
+
+	* README: Fix.
+
+2008-08-27  Simon Josefsson  <simon@josefsson.org>
+
+	* README: Fix.
+
+2008-08-27  Simon Josefsson  <simon@josefsson.org>
+
+	* README.html: Regenerate.
+
+2008-08-27  Simon Josefsson  <simon@josefsson.org>
+
+	* README: Fix.
+
+2008-08-27  Simon Josefsson  <simon@josefsson.org>
+
+	* git2cl: Credit Luis properly.
+
+2008-08-27  Simon Josefsson  <simon@josefsson.org>
+
+	* git2cl: Invoke git-log if not used as a pipe.
+
+2008-08-27  Simon Josefsson  <simon@josefsson.org>
+
+	* git2cl: Merge in fixes from Luis Mondesi.
+
+2008-08-27  Simon Josefsson  <simon@josefsson.org>
+
+	* COPYING: Add.
+
+2007-06-08  Simon Josefsson  <simon@josefsson.org>
+
+	* git2cl: Handle merges.  Handle binary files ('-' in added/deleted
+	columns).
+
+2007-05-25  Simon Josefsson  <jas@mocca.josefsson.org>
+
+	* git2cl: Don't fail on empty input.
+
+2007-03-02  Simon Josefsson  <simon@josefsson.org>
+
+	* git2cl: Chmod +x.
+
+2007-03-02  Simon Josefsson  <simon@josefsson.org>
+
+	* git2cl: Warn on (some) errors.
+
+2007-03-02  Simon Josefsson  <simon@josefsson.org>
+
+	* git2cl: Handle ' create mode' etc.
+
+2007-03-02  Simon Josefsson  <simon@josefsson.org>
+
+	* git2cl: Handle when log entrie isn't about files.
+
+2007-03-02  Simon Josefsson  <simon@josefsson.org>
+
+	* git2cl: Translate newlines in log entries to SPC.
+
+2007-03-02  Simon Josefsson  <simon@josefsson.org>
+
+	* git2cl: Handle empty lines in log entries.  Reported by "Andreas
+	Herrmann" <andreas.herrmann3@amd.com>.
+
+2007-03-02  Simon Josefsson  <simon@josefsson.org>
+
+	* README: Typo.
+
+2007-03-02  Simon Josefsson  <simon@josefsson.org>
+
+	* README.html: Generated.
+
+2007-03-02  Simon Josefsson  <simon@josefsson.org>
+
+	* Initial version.
+
